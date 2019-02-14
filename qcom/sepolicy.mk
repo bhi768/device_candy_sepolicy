@@ -8,6 +8,12 @@ TARGET_USES_PREBUILT_VENDOR_SEPOLICY ?= true
 endif
 endif
 
+ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
+ifeq ($(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE),)
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY ?= true
+endif
+endif
+
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/candy/sepolicy/qcom/private
 
