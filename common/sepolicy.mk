@@ -23,7 +23,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/candy/sepolicy/common/dynamic
+    device/candy/sepolicy/common/dynamic \
+    device/candy/sepolicy/common/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/candy/sepolicy/common/dynamic \
