@@ -30,3 +30,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/candy/sepolicy/common/dynamic \
     device/candy/sepolicy/common/vendor
 endif
+
+# Selectively include legacy rules defined by the products
+-include device/lineage/sepolicy/legacy-common/sepolicy.mk
