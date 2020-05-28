@@ -1,2 +1,4 @@
 # Long screenshot
 longshot                                  u:object_r:longshot_service:s0
+
+lineagetrust                              u:object_r:lineage_trust_service:s0

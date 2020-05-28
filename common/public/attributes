@@ -3,6 +3,7 @@ hal_attribute_lineage(lineage_camera_motor)
 hal_attribute_lineage(lineage_fod)
 hal_attribute_lineage(lineage_touch)
 
-hal_attribute(lineage_livedisplay)
+hal_attribute(lineage_camera_motor)
+hal_attribute(lineage_fod)
 hal_attribute(lineage_touch)
 hal_attribute(lineage_trust)
