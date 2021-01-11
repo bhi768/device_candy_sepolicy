@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all qcom products
-# that inherit from Lineage
+# that inherit from Candy
 #
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
 ifeq ($(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE),)
