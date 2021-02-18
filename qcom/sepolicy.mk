@@ -1,6 +1,6 @@
 #
 # This policy configuration will be used by all qcom products
-# that inherit from Arrow
+# that inherit from Cabdy
 #
 
 ifeq ($(TARGET_COPY_OUT_VENDOR), vendor)
@@ -10,16 +10,16 @@ endif
 endif
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/arrow/sepolicy/qcom/private
+    device/candy/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/arrow/sepolicy/qcom/dynamic \
-    device/arrow/sepolicy/qcom/system
+    device/candy/sepolicy/qcom/dynamic \
+    device/candy/sepolicy/qcom/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/arrow/sepolicy/qcom/dynamic \
-    device/arrow/sepolicy/qcom/vendor
+    device/candy/sepolicy/qcom/dynamic \
+    device/candy/sepolicy/qcom/vendor
 endif
 
 ifeq (,$(filter msm8960 msm8226 msm8610 msm8974 apq8084 msm8909 msm8916 msm8952 msm8992 msm8994 msm8937 msm8953 msm8996 msm8998 sdm660 sdm710 sdm845, $(TARGET_BOARD_PLATFORM)))
